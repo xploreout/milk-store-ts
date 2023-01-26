@@ -1,11 +1,14 @@
 import * as React from 'react'
 
 const TopBar = () => {
+  const storeName = 'THE MILK STORE'
   return (
-    // <div className="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-center">
-    <div >
-      <h1 className='text-5xl font-bold mt-0 mb-6' style={{ color: '#D38AA3' }}>
-        The Milk Store
+    <div className='bg-white p-2 pt-3'>
+      <h1
+        className=' text-3xl font-medium  mt-0 mb-4'
+        style={{ color: '#D38AA3' }}
+      >
+        {storeName}
       </h1>
     </div>
   )

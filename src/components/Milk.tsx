@@ -7,24 +7,26 @@ type Props = {
 }
 
 const Milk: React.FC<Props> = ({ milk }) => {
-  
+  const handleClick = () => {
+    console.log('want to order')
+  }
+
   return (
     <div className='w-full w-78 max-w-sm bg-white border rounded-lg shadow'>
       <div
-        className='rounded-t-lg '
+        className='rounded-t-lg flex justify-center '
         style={{ backgroundColor: 'rgb(243 244 246)' }}
       >
-        <a href={`/${milk.id}`}>
-          <img
-            className='p-6 ml-10'
-            src={`${Image}`}
-            alt='milk'
-            width='200px'
-            height='200px'
-          />
-        </a>
+        <img
+          className='p-6 ml-5'
+          src={`${Image}`}
+          alt='milk'
+          width='200px'
+          height='200px'
+        />
       </div>
-      <div className='px-5 pb-3 mt-5'>
+      <a href={`/${milk.id}`}>
+      <div className='px-5 pb-3 mt-5' id='content ' onClick={handleClick}>
         <h5 className='text-left font-sans tracking-normal text-gray-700'>
           {milk.name}
         </h5>
@@ -33,6 +35,7 @@ const Milk: React.FC<Props> = ({ milk }) => {
           <span className=' text-sm text-slate-400'>{milk.storage} Liter</span>
         </div>
       </div>
+      </a>
     </div>
   )
 }
