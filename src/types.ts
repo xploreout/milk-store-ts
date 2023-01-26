@@ -9,5 +9,4 @@ export type IParamsId = {
 }
 export type MilksContextType = {
   milks: IMilk[]
-  // totals : number
 }

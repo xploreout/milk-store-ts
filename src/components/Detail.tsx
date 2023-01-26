@@ -38,9 +38,9 @@ const Detail = () => {
                 </p>
                 <Slider max={milk?.storage} />
 
-                <button className='bg-gray-300 w-36 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded inline-flex items-center mt-14 justify-center'>
+                {/* <button className='bg-gray-300 w-36 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded inline-flex items-center mt-14 justify-center'>
                   <span>Order</span>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

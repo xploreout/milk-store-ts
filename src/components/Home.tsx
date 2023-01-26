@@ -26,7 +26,6 @@ const Home = () => {
 
   useEffect(() => {
     getDisplayMilks()
-    console.log('inside useEffect')
   }, [searchQuery])
 
   const getDisplayMilks = () => {

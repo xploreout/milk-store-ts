@@ -4,9 +4,13 @@ interface ISliderProps {
   max: number | undefined
 }
 const Slider = ({ max }: ISliderProps) => {
-  const [quantity, setQuantity] = useState<number>(1)
+  const [quantityOrdered, setQuantityOrdered] = useState<number>(1)
   const handleOrder = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setQuantity(Number(e.target.value))
+    setQuantityOrdered(Number(e.target.value))
+  }
+
+  const handleOrderClick = () => {
+    console.log('buttone clicked to add to cart with qty', quantityOrdered)
   }
 
   return (
@@ -22,7 +26,13 @@ const Slider = ({ max }: ISliderProps) => {
           onChange={handleOrder}
         />
       </div>
-      <span>{quantity}</span>
+      <span>{quantityOrdered}</span>
+      <button
+        className='bg-gray-300 w-36 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded inline-flex items-center mt-14 justify-center'
+        onClick={handleOrderClick}
+      >
+        <span>Order</span>
+      </button>
     </>
   )
 }
