@@ -1,14 +1,13 @@
 import * as React from 'react'
 
 const TopBar = () => {
-  const storeName = 'THE MILK STORE'
   return (
-    <div className='bg-white p-2 pt-3'>
+    <div className='bg-white pt-2 pb-1' style={{ maxWidth: '1800px' }}>
       <h1
-        className=' text-3xl font-medium  mt-0 mb-4'
+        className=' text-5xl font-bold mt-0 mb-6'
         style={{ color: '#D38AA3' }}
       >
-        {storeName}
+        The Milk Store
       </h1>
     </div>
   )

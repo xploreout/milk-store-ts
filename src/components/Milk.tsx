@@ -8,7 +8,7 @@ type Props = {
 
 const Milk: React.FC<Props> = ({ milk }) => {
   const handleClick = () => {
-    console.log('want to order')
+     
   }
 
   return (
