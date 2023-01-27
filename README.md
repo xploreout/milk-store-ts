@@ -1,4 +1,10 @@
-# This Milk Store application is built with Vite React . Typescript . TailwindCss
+# This is an application for a Milk Store
+
+## Tech stacks utilized are:
+
+- React(Vite)
+- Typescript
+- TailwindCss
 
 ## The app will list all available milk products via backend api (Asp.Net/SQL)
 
