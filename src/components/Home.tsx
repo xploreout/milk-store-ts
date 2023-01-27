@@ -22,6 +22,7 @@ const Home = () => {
     'Cashew Milk',
     'Coconut Milk',
     'Hemp Milk',
+    'Macadamia Milk',
   ]
 
   useEffect(() => {
