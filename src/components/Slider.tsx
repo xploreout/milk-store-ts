@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 interface ISliderProps {
   max: number | undefined
 }
 const Slider = ({ max }: ISliderProps) => {
+  const navigate = useNavigate()
   const [quantityOrdered, setQuantityOrdered] = useState<number>(1)
   const handleOrder = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuantityOrdered(Number(e.target.value))
   }
 
   const handleOrderClick = () => {
-    console.log('buttone clicked to add to cart with qty', quantityOrdered)
+    navigate(`/`)
+
+    console.log(`${quantityOrdered} liters is added to cart.`)
   }
 
   return (

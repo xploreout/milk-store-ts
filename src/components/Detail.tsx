@@ -1,17 +1,30 @@
 import Image from '/images/milk.png'
 import Back from './Back'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { MilksContext } from '../context/milksContext'
-import { MilksContextType, IParamsId } from '../types'
+import { MilksContextType, IParamsId, IMilk } from '../types'
 import { useParams } from 'react-router-dom'
 import Slider from './Slider'
 
 const Detail = () => {
   const { milks } = useContext(MilksContext) as MilksContextType
   const [selectedQuantity, setSelectedQuantity] = useState<number>(10)
+  const [milk, setMilk] = useState<IMilk>()
 
-  const { id } = useParams<IParamsId>()
-  const milk = milks.find((m) => m.id === id)
+  let { id } = useParams<IParamsId>()
+  
+  const getFreshMilk = async () => {
+    const response = await fetch(`https://localhost:7062/api/milks/${id}`)
+    const data = await response.json()
+    setMilk(data)
+    return data
+  }
+
+  useEffect(() => {
+    getFreshMilk()
+  }, [])
+
+  // const milk = milks.find((m) => m.id === id)
 
   return (
     <div className='container mx-auto'>
