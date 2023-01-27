@@ -2,10 +2,7 @@
 
 ## The app will list all available milk products via backend api (Asp.Net/SQL)
 
-![All] (public/images/listAll.jpg)
-
-
-<img src="https://github.com/xploreout/milk-store-ts/blob/main/public/images/listAll.jpg)" width=50% height=50%>
+![All](public/images/listAll.jpg)
 
 ## User can filter to display by type of milk
 
