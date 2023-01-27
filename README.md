@@ -1,4 +1,4 @@
-# This Milk Store application is built with Vita React and Typescript
+# This Milk Store application is built with Vite React/Typescript/TailwindCss
 
 ## The app will list all available milk products via backend api (Asp.Net/SQL)
 
@@ -16,7 +16,7 @@
 
 ![product detail](public/images/milkslider.jpg)
 
-### Project Requirements 
+### Project Requirements
 
 - Populate a database with this JSON: https://github.com/saltstudy/pgp-test-milkApp-json
 - Get the image from here: milk.png, or use whatever image(s) you want!
