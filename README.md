@@ -1,6 +1,6 @@
 # This application is built for a Milk Store
 
-![image] (files/Users/tanlui/salt/pgp/milk-store-ts/public/images/listAll.jpg)
+![image](files/Users/tanlui/salt/pgp/milk-store-ts/public/images/listAll.jpg)
 
 ### Requirements
 
