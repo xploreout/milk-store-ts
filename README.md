@@ -1,8 +1,11 @@
-# This application is built for a Milk Store
+# This Milk Store application is built with Vita React with typescript
 
-## Listing all available milk products
+## The app will list all available milk products via backend api (Asp.Net/SQL)
 
-![All](public/images/listAll.jpg)
+![All] (public/images/listAll.jpg)
+
+
+<img src="https://github.com/xploreout/milk-store-ts/blob/main/public/images/listAll.jpg)" width=50% height=50%>
 
 ## User can filter to display by type of milk
 
@@ -23,7 +26,7 @@
 - A proper README, this should include background, how to run the app, etc…
 - As the customer enters the site they should be met with all the cards of milk that are in storage
 - A search bar where they can search based on name
-- A filter function that can filter out different types of milk; 
+- A filter function that can filter out different types of milk;
 - The customer should be able to click on a card and be redirected to the product
 
   1.  Info should be displayed
