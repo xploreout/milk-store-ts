@@ -1,5 +1,7 @@
 # This application is built for a Milk Store
 
+![image] (files/Users/tanlui/salt/pgp/milk-store-ts/public/images/listAll.jpg)
+
 ### Requirements
 
 - Populate a database with this JSON: https://github.com/saltstudy/pgp-test-milkApp-json

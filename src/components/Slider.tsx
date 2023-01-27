@@ -22,7 +22,7 @@ const Slider = ({ max }: ISliderProps) => {
           min='1'
           max={max}
           defaultValue='1'
-          className='w-full cursor-pointer accent-lime-500 '
+          className='w-full cursor-pointer accent-lime-500 border-none'
           onChange={handleOrder}
         />
       </div>
